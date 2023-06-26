@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+    </head>
+    <body>
+        <header class="header_text">
+            <div>
+                <br><br>
+                <p id="b1">print("Hello World!")</p>
+            </div>
+        </header>
+        <nav></nav>
+
+        <article>
+            <div class="about-me">
+                <h1>WHO I AM?</h1>
+                <p>I am interested with UI design, software, building and modeling for 5+ years. I started developing games on Roblox in 2017 and the total number of visits to the games I contributed is 10M+</p>
+            </div>
+
+            <div class="talents">
+                <h1>WHAT CAN I DO?</h1>
+                <p>UI Design, Building, Modeling, Scripting... and more!
+                    <br>I can do many things. You can visit my <a href="select.html">portfolio</a> page to see what I can do
+                </p>
+            </div>
+
+            <div class="payment">
+                <h1>PAYMENT</h1>
+                <p>Currently, I accept only Robux. You can choose Roblox Gift Card to pay with dollars.
+                    Payment is provided from the budget allocated to the developer. When determining the price, please do not forget that I do my work with quality. Prices are always negotiable.</p>
+                    <br>Below is the base price list.
+                    <br>
+
+                    <center>
+                    <table id="payment-type">
+                        <tr><th></th><th>Job Type</th>  <th></th> <th>Price (Starting)</th></tr>
+                        <tr><td></td><td>Full Time</td> <td></td> <td>10,000 <img class="robux-logo" src="icons/robux_gold.png"></td></tr>
+                        <tr><td></td><td>Part Time</td> <td></td> <td>1,000 <img class="robux-logo" src="icons/robux_gold.png"></td></tr>
+                        <tr><td></td><td>Commision</td> <td></td> <td>500 <img class="robux-logo" src="icons/robux_gold.png"></td></tr>
+                    </table>
+                    </center>
+                    <br><br>
+                    <center>
+                    <button id="ptable">BASE PRICES</button>
+                    </center>
+                    <!---
+                    <table id="payment-table">
+                        <tr><th></th><th>Type</th>                                                             <th>Payment Type</th>  <th>Price (Starting)</th></tr>
+                        <tr id="b"><td></td><td title="Payment change by size.">Map Design*</td>               <td>Negotiable</td>    <td>8,500 <img class="robux-logo" src="icons/robux_gold.png">
+                        <tr><td></td><td>Reducing Lag</td>                                                     <td>Standart</td>      <td>1,000 <img class="robux-logo" src="icons/robux_gold.png"></tr>
+                        <tr id="b"><td></td><td title="Payment change by size.">Build Custom Building*</td>    <td>Negotiable</td>    <td>1,500 <img class="robux-logo" src="icons/robux_gold.png">
+                    </table>
+                    --->
+
+
+                    <script type="text/javascript">
+                        var modal = document.getElementById('ptable');
+                        modal.onclick = function(event) {      
+                            Swal.fire({
+                            title: 'Base Prices',
+                            text: '(*): Payment change by size.',
+                            imageUrl: 'https://groups.google.com/group/programmerbcrk/attach/5a8054a44c86/payment-table.png?part=0.1&view=1',
+                            imageWidth: 500,
+                            imageHeight: 300,
+                            imageAlt: 'Payment Table',
+                            })
+                        }
+                    </script>
+                </p>
+            </div>
+            <!--
+            <div>
+                <p>İlgili belgeye erişmek için <a href="file.html">buraya tıklayın</a></p>
+            </div>
+            -->
+        </article>
+        <footer></footer>
+    </body>
+</html>
